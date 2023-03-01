@@ -1,0 +1,99 @@
+body {
+    font-family: monospace;
+    color: #000000;
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 450px;
+    padding: 0.625rem 0.938rem;
+  
+    background-color: #F96B0A;
+    border: 5px solid #000000;
+    border-radius: 10px;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 0.9rem;
+  }
+  
+  .header__img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .header__title,
+  .header__subtitle {
+    font-size: 2rem;
+  }
+  
+  .header__subtitle {
+    margin-bottom: 1rem;
+  }
+  
+  .links {
+    font-size: 0.8rem;
+  }
+  
+  .links__menu-item-a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0.5rem;
+  }
+  
+  .links a:hover {
+    display: block;
+    background-color: #e9bb8d;
+    animation: mouseHover 1.1s;
+    border-radius: 7px;
+  }
+  
+  ion-icon:hover {
+    color: #000000;
+    animation: mouseHover 1.5s;
+  }
+  
+  @keyframes mouseHover {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .social {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .social__menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social__menu-item {
+    padding: 0.5rem;
+  }
+  
+  .social__menu-item-a {
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 300px;
+    }
+  }
+  
